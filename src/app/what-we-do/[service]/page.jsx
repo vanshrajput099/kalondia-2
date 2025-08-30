@@ -26,7 +26,7 @@ const page = async ({ params }) => {
                 </div>
 
                 <div className='mt-20'>
-                    <Link href={"/who-we-do"} className='bg-[#6224A9] text-white px-6 py-4 rounded-lg text-xs xl:text-sm'>
+                    <Link href={"/what-we-do"} className='bg-[#6224A9] text-white px-6 py-4 rounded-lg text-xs xl:text-sm'>
                         Return To Who We Do
                     </Link>
                 </div>
