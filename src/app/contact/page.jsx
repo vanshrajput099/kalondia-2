@@ -6,11 +6,11 @@ const page = () => {
     return (
         <div>
             <Image src={bg} className='h-[300px] object-cover' alt='image'/>
-            <div className='w-[60%] text-center mx-auto py-20'>
-                <h1 className='text-4xl text-[#6224A9] font-medium'>Investor Relations Inquiry</h1>
+            <div className='p-2 xl:p-0 xl:w-[60%] text-center mx-auto py-20'>
+                <h1 className='text-2xl xl:text-4xl text-[#6224A9] font-medium'>Investor Relations Inquiry</h1>
                 <form className='space-y-5 mt-20'>
 
-                    <div className='grid grid-cols-3 gap-x-3 justify-between'>
+                    <div className='grid xl:grid-cols-3 gap-x-3 gap-y-3 justify-between'>
                         <div className='border py-1 px-2 flex flex-col items-start rounded-sm border-gray-400'>
                             <label htmlFor="" className='text-gray-500 text-sm'>TITLE</label>
                             <input className='border-none w-full text-sm' type="text" />
@@ -25,7 +25,7 @@ const page = () => {
                         </div>
                     </div>
 
-                    <div className='grid grid-cols-2 gap-x-3 justify-between'>
+                    <div className='grid xl:grid-cols-2 gap-x-3 justify-between'>
                         <div className='border py-1 px-2 flex flex-col items-start rounded-sm border-gray-400'>
                             <label htmlFor="" className='text-gray-500 text-sm'>EMAIL</label>
                             <input className='border-none w-full text-sm' type="text" />

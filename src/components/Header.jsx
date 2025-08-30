@@ -7,13 +7,13 @@ import { Menu } from 'lucide-react';
 const Header = () => {
     return (
         <>
-            <div className='xl:hidden flex justify-between items-center px-2'>
+            <div className='lg:hidden flex justify-between items-center px-2'>
                 <Menu color='#6224A9' />
                 <Link href={"/"}>
                     <Image src={logo} alt='logo.png' className='w-[150px]' />
                 </Link>
             </div>
-            <div className='hidden xl:flex mx-auto w-[80%]  items-center justify-between py-5'>
+            <div className='hidden lg:flex mx-auto w-[95%] xl:w-[80%]  items-center justify-between py-5'>
                 <Link href={"/"}>
                     <Image src={logo} alt='logo.png' className='w-[250px]' />
                 </Link>
