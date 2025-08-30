@@ -74,8 +74,8 @@ const Page = () => {
             </div>
           </div>
 
-          <div className='flex flex-col xl:flex-row justify-between mt-16'>
-            <div className='xl:w-[50%]'>
+          <div className='flex flex-col lg:flex-row lg:items-center lg:gap-5 justify-between mt-16'>
+            <div className='lg:w-[50%]'>
               <div className='ml-3'>
                 <div className='xl:w-[80%] space-y-4'>
                   <div className='flex -ml-3 xl:text-2xl font-medium items-center'>
@@ -100,7 +100,7 @@ const Page = () => {
                 </div>
               </div>
             </div>
-            <Image src={mainImage} alt='main.png' className='xl:w-[50%] h-[200px] xl:h-[400px] object-cover rounded-xl' />
+            <Image src={mainImage} alt='main.png' className='h-[200px] xl:w-[50%] lg:h-[400px] object-cover rounded-xl' />
           </div>
         </div>
       </div>
@@ -115,7 +115,7 @@ const Page = () => {
               We combine AI-powered analytics, strategic funding, and deep market expertise to deliver solutions that maximize returns and drive sustainable growth.
             </p>
           </div>
-          <div className='grid grid-cols-1 xl:grid-cols-2 mt-20 gap-x-10 gap-y-10'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 mt-20 gap-x-10 gap-y-10'>
             {
               SERVICES_DATA.map((ele, key) => <Service key={key} data={ele} />)
             }
@@ -133,7 +133,7 @@ const Page = () => {
               We deliver cutting-edge AI-powered investment solutions backed by proven expertise, data-driven strategies, and a deep commitment to client success.
             </p>
           </div>
-          <div className='grid grid-cols-1 xl:grid-cols-2 mt-20 gap-x-10 gap-y-10'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 mt-20 gap-x-10 gap-y-10'>
             {
               FEATURES_DATA.map((ele, key) => <WhyChooseUs data={ele} key={key} />)
             }
@@ -156,8 +156,8 @@ const Page = () => {
       <div className='p-2 xl:p-0'>
         <div className='mx-auto xl:w-[80%] py-20'>
           <h1 className='text-3xl xl:text-5xl font-semibold text-center'>Meet Our <span className='text-[#6224A9]'>Founder</span> </h1>
-          <div className='flex flex-col xl:flex-row justify-between items-center gap-5'>
-            <Image src={founder} alt='founder.png' className='mt-10 xl:mt-20 xl:w-[50%]' />
+          <div className='flex flex-col xl:flex-row justify-between items-center gap-5 xl:mt-10'>
+            <Image src={founder} alt='founder.png' className='h-[400px] object-cover xl:w-[50%] rounded-lg' />
             <div className='xl:w-[50%] xl:text-xl'>
               <p>Dr. Niranjan Patel, our CEO, carries forward a proud legacy rooted in a deep family heritage in finance. Inspired and mentored from an early age by his maternal grandfather, Late Shri Ramanbhai B. Patel—who founded the company in 1992—Dr. Patel leads with integrity, innovation, and purpose.
                 <br /> <br />
@@ -173,7 +173,7 @@ const Page = () => {
         <div className='mx-auto xl:w-[80%] py-20'>
           <h1 className='text-3xl xl:text-5xl font-semibold text-center'>AI-Driven Trading & HFT Edge</h1>
           <div className='flex justify-center mt-10'>
-            <Image className='xl:w-[80%]' src={aiImage} alt='aiImage.png' />
+            <Image className='h-full lg:w-[80%] object-cover xl:w-[80%]' src={aiImage} alt='aiImage.png' />
           </div>
           <p className='mt-5 font-medium text-xl xl:text-2xl text-center'>Enabling smarter decisions, accurate forecasting, and a competitive edge. Most importantly, we can access and analyze macroeconomic data from all around the world within minutes, giving a real-time global perspective</p>
         </div>
@@ -185,7 +185,7 @@ const Page = () => {
           <div>
             <h1 className='text-3xl xl:text-5xl font-semibold'>Harmonizing Voices: <br />Symphony of Collaboration</h1>
           </div>
-          <div className='grid grid-cols-1 xl:grid-cols-3 gap-x-10 gap-y-10 mt-20'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-10 gap-y-10 mt-20'>
             <Testimonial />
             <Testimonial />
             <Testimonial />
@@ -195,8 +195,8 @@ const Page = () => {
 
       {/* Lets Build */}
       <div className='bg-[#F9FAFB] p-2 xl:p-0'>
-        <div className='mx-auto xl:w-[80%] py-20 flex flex-col-reverse xl:flex-row justify-between items-center gap-5'>
-          <Image className='xl:w-[45%]' src={letsBuild} alt='letsBuild.png' />
+        <div className='mx-auto xl:w-[80%] py-20 flex flex-col-reverse lg:flex-row justify-between items-center gap-5'>
+          <Image className='h-[300px] lg:h-fit object-cover xl:w-[45%]' src={letsBuild} alt='letsBuild.png' />
 
           <div className='xl:w-[50%] xl:space-y-10'>
             <div className='space-y-5'>
