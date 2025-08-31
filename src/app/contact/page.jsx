@@ -6,9 +6,9 @@ const page = () => {
     return (
         <div>
             <Image src={bg} className='h-[300px] object-cover' alt='image'/>
-            <div className='p-2 xl:py-20 xl:w-[60%] text-center mx-auto py-20'>
+            <div className='p-2 xl:py-20 xl:w-[60%] text-center mx-auto py-10 pb-20'>
                 <h1 className='text-2xl xl:text-4xl text-[#6224A9] font-medium'>Investor Relations Inquiry</h1>
-                <form className='space-y-5 mt-20'>
+                <form className='space-y-5 mt-10'>
 
                     <div className='grid grid-cols-1 lg:grid-cols-3 gap-x-3 gap-y-3 justify-between'>
                         <div className='border py-1 px-2 flex flex-col items-start rounded-sm border-gray-400'>
@@ -82,15 +82,15 @@ const page = () => {
                     <p className='text-left text-sm'>By providing a telephone number and submitting this form, you are consenting to be contacted by phone or email in response to your Inquiry. Elliott will not send you an SMS text message. </p>
 
                     <div className='flex justify-start'>
-                        <button className='border border-[#6224A9] w-full lg:w-fit text-[#6224A9] px-10 py-3 rounded-sm hover:border-white hover:cursor-pointer'>Submit</button>
+                        <button className='mt-5 border border-[#6224A9] w-full lg:w-fit text-[#6224A9] px-10 py-3 rounded-sm hover:border-white hover:cursor-pointer'>Submit</button>
                     </div>
                 </form>
             </div>
 
             <div className='bg-[#F9FAFB] py-10'>
-                <div className='p-2 xl:py-20 xl:w-[60%] text-center mx-auto'>
+                <div className='p-2 xl:py-20 xl:w-[60%] text-center mx-auto pb-20'>
                     <h1 className='text-2xl xl:text-4xl text-[#6224A9] font-medium'>Media Inquiry</h1>
-                    <form className='space-y-5 mt-20'>
+                    <form className='space-y-5 mt-10'>
                         <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-3 gap-y-3 justify-between'>
                             <div className='border py-1 px-2 flex flex-col items-start rounded-sm border-gray-400 bg-white'>
                                 <label htmlFor="" className='text-gray-500 text-sm'>FIRST NAME</label>
@@ -127,7 +127,7 @@ const page = () => {
                         <p className='text-left text-sm'>By providing a telephone number and submitting this form, you are consenting to be contacted by phone or email in response to your Inquiry. Elliott will not send you an SMS text message. </p>
 
                         <div className='flex justify-start'>
-                            <button className='border border-[#6224A9] w-full lg:w-fit text-[#6224A9] px-10 py-3 rounded-sm hover:border-white hover:cursor-pointer'>Submit</button>
+                            <button className='mt-5 border border-[#6224A9] w-full lg:w-fit text-[#6224A9] px-10 py-3 rounded-sm hover:border-white hover:cursor-pointer'>Submit</button>
                         </div>
                     </form>
                 </div>
