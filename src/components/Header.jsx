@@ -3,12 +3,13 @@ import React from 'react'
 import logo from "@/assets/logo.png";
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
+import HeaderNav from './HeaderNav';
 
 const Header = () => {
     return (
         <>
             <div className='lg:hidden flex justify-between items-center px-2'>
-                <Menu color='#6224A9' />
+                <HeaderNav><Menu color='#6224A9' /></HeaderNav>
                 <Link href={"/"}>
                     <Image src={logo} alt='logo.png' className='w-[150px]' />
                 </Link>
@@ -23,7 +24,6 @@ const Header = () => {
                     <Link href={"/what-we-do"}>What We Do</Link>
                     <Link href={"/"}>For Investors</Link>
                     <Link className='bg-[#6224A9] text-white px-4 py-2 rounded-lg' href={"/contact"}>Contact</Link>
-
                 </div>
             </div>
         </>

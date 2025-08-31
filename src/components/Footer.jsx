@@ -5,8 +5,8 @@ import facebook from "@/assets/facebook.png"
 
 const Footer = () => {
     return (
-        <div className='bg-[#F9FAFB]'>
-            <div className='mx-auto w-[80%] '>
+        <div className='bg-[#F9FAFB] p-2 xl:p-0'>
+            <div className='mx-auto xl:w-[80%]'>
                 <div className='py-20 flex flex-col xl:flex-row justify-between xl:items-center gap-2 xl:gap-5 border-b-1 border-b-gray-400'>
                     <div className='space-y-2 xl:space-y-5'>
                         <Image className='w-[300px]' src={logo} alt='logo.png' />
@@ -39,7 +39,7 @@ const Footer = () => {
 
                 <div className='flex flex-col xl:flex-row text-center xl:text-left justify-between text-xs xl:text-xl font-medium py-5'>
                     <h1>Copyright @ 2025 Millennium Investments LLC, All rights reserved.</h1>
-                    <div className='flex gap-10 mt-5 xl:mt-0'>
+                    <div className='flex justify-center gap-10 mt-5 xl:mt-0'>
                         <h1>Terms & Conditions</h1>
                         <h1>Privacy Policy</h1>
                     </div>
