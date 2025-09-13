@@ -2,9 +2,15 @@
 import React, { useState } from "react";
 import bg from "@/assets/bg.jpg";
 import Image from "next/image";
+import axios from "axios";
+import { toast } from "sonner"
+import { Loader2 } from "lucide-react";
 
 const Page = () => {
-    // Investor Inquiry state
+
+    const [mediaLoading, setMediaLoading] = useState(false);
+    const [investorLoading, setInvestorLoading] = useState(false);
+
     const [investorForm, setInvestorForm] = useState({
         title: "",
         firstName: "",
@@ -22,7 +28,6 @@ const Page = () => {
     });
     const [investorErrors, setInvestorErrors] = useState({});
 
-    // Media Inquiry state
     const [mediaForm, setMediaForm] = useState({
         firstName: "",
         lastName: "",
@@ -52,21 +57,38 @@ const Page = () => {
         return errors;
     };
 
-    const handleInvestorSubmit = (e) => {
+    const handleInvestorSubmit = async (e) => {
         e.preventDefault();
         const errors = validate(investorForm);
         setInvestorErrors(errors);
         if (Object.keys(errors).length === 0) {
-            alert("Investor Inquiry Submitted ✅");
+            setInvestorLoading(true);
+            try {
+                await axios.post("/api/contact/investor", { ...investorForm });
+                toast("Mail has been sent successfully !!");
+            } catch (error) {
+                toast.error(error.message);
+            } finally {
+                setInvestorLoading(false);
+            }
         }
     };
 
-    const handleMediaSubmit = (e) => {
+    const handleMediaSubmit = async (e) => {
         e.preventDefault();
         const errors = validate(mediaForm);
         setMediaErrors(errors);
-
-        // API 
+        if (Object.keys(errors).length === 0) {
+            setMediaLoading(true);
+            try {
+                await axios.post("/api/contact/media", { ...mediaForm });
+                toast("Mail has been sent successfully !!");
+            } catch (error) {
+                toast.error(error.message);
+            } finally {
+                setMediaLoading(false);
+            }
+        }
     };
 
     const renderField = (form, setForm, errors, field, label, placeholder) => (
@@ -132,7 +154,9 @@ const Page = () => {
                             type="submit"
                             className="mt-5 border border-[#6224A9] w-full lg:w-fit text-[#6224A9] px-10 py-3 rounded-sm hover:border-white hover:cursor-pointer"
                         >
-                            Submit
+                            {
+                                investorLoading ? <>Submitting <Loader2 className="animate-spin" /> </> : "Submit"
+                            }
                         </button>
                     </div>
                 </form>
@@ -169,7 +193,9 @@ const Page = () => {
                                 type="submit"
                                 className="mt-5 border border-[#6224A9] w-full lg:w-fit text-[#6224A9] px-10 py-3 rounded-sm hover:border-white hover:cursor-pointer"
                             >
-                                Submit
+                                {
+                                    mediaLoading ? <>Submitting <Loader2 className="animate-spin" /> </> : "Submit"
+                                }
                             </button>
                         </div>
                     </form>

@@ -8,7 +8,6 @@ const page = async ({ params }) => {
 
     const paramsNames = await params;
     const title = paramsNames.service.split("%20").join(" ");
-    console.log(title)
 
     return (
         <div>
@@ -20,7 +19,7 @@ const page = async ({ params }) => {
             </div>
 
             <div className='p-2 xl:p-0 xl:w-[60%] mx-auto py-5 pb-10 xl:py-20'>
-                <div className='space-y-3 mt-10'>
+                <div className='text-sm xl:text-base space-y-3 mt-10'>
                     {
                         SERVICES_DATA_OBJ[title].map((ele, key) => <p className='text-sm xl:text-base' key={key}>{ele}</p>)
                     }

@@ -1,4 +1,5 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner"
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         className={`${plusJakartaSans.variable} antialiased`}
       >
         <Header />
+        <Toaster />
         {children}
         <Footer />
         <Logo />

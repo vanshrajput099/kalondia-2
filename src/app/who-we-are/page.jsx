@@ -3,6 +3,7 @@ import bg from "@/assets/bg.jpg";
 import Image from 'next/image';
 import MainPersonAbout from './_components/MainPersonAbout';
 import OthersAbout from './_components/OthersAbout';
+import { TEAM_MEMBERS } from '@/data';
 
 const page = () => {
     return (
@@ -22,21 +23,14 @@ const page = () => {
                     </div>
                 </div>
 
-                <div className='xl:w-[70%] mx-auto grid lg:grid-cols-2 mt-10 gap-x-10'>
-                    <MainPersonAbout />
+                <div className='xl:w-[70%] mx-auto grid lg:grid-cols-1 mt-10 gap-x-10'>
                     <MainPersonAbout />
                 </div>
 
                 <div className='xl:w-[70%] mx-auto grid lg:grid-cols-2 xl:grid-cols-3 gap-x-10 gap-y-10 mt-10'>
-                    <OthersAbout />
-                    <OthersAbout />
-                    <OthersAbout />
-                    <OthersAbout />
-                    <OthersAbout />
-                    <OthersAbout />
-                    <OthersAbout />
-                    <OthersAbout />
-                    <OthersAbout />
+                    {
+                        TEAM_MEMBERS.map((ele,idx)=><OthersAbout data={ele} key={idx} />)
+                    }
                 </div>
             </div>
         </div>
