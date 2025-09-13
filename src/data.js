@@ -12,7 +12,7 @@ export const SERVICES_DATA = [
         image: service1,
     },
     {
-        title: "Private Equity & Turnaround Investing",
+        title: "Private Equity And Turnaround Investing",
         description:
             "We identify undervalued and distressed assets, applying strategic capital positioning to unlock hidden value and maximize investor gains.",
         image: service2,
@@ -45,7 +45,7 @@ export const SERVICES_DATA_OBJ = {
         "The focus remains on sustainable compounding, enabling clients to steadily build long-term wealth while minimizing unnecessary risks."
     ],
 
-    "Private Equity & Turnaround Investing": [
+    "Private Equity And Turnaround Investing": [
         "We specialize in identifying companies that may be undervalued, distressed, or overlooked by traditional investors but possess strong fundamentals and untapped potential.",
         "Once identified, we apply a hands-on approach—infusing capital, restructuring operations, and guiding leadership teams to restore growth and profitability.",
         "This strategy not only revives businesses but also unlocks hidden value that can generate exponential returns for stakeholders.",

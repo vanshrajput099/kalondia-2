@@ -18,8 +18,7 @@ const page = () => {
                 <div className='xl:w-[40%] mx-auto text-center'>
                     <h1 className='text-2xl xl:text-4xl text-[#6224A9] font-medium'>Management Committee</h1>
                     <div className='text-sm xl:text-base space-y-5 mt-5'>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, repellendus!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptas quaerat cumque optio praesentium, quod nulla ipsa tenetur dolor reprehenderit modi, eveniet similique? Ratione fugiat voluptas minima? Quasi placeat suscipit officiis ducimus eius soluta qui ipsa temporibus iste commodi rerum nemo, sit, voluptatem reiciendis quis. Asperiores dignissimos nam exercitationem facere!</p>
+                        <p>At Millennium Investment LLC, our strength lies in our people. Backed by decades of combined experience, our team of seasoned investment professionals, analysts, and strategists brings unparalleled expertise to every decision. Each member contributes unique insights from global markets, risk management, and financial innovation, ensuring we deliver consistently strong results for our clients. United by a shared vision of excellence, integrity, and innovation, our people are the driving force behind Millennium’s continued success.</p>
                     </div>
                 </div>
 

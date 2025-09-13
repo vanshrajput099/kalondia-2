@@ -2,6 +2,9 @@ import React from 'react'
 import logo from "@/assets/logo.png";
 import Image from 'next/image';
 import facebook from "@/assets/facebook.png"
+import fb from "@/assets/fb.png"
+import insta from "@/assets/insta.png"
+import link from "@/assets/link.png"
 
 const Footer = () => {
     return (
@@ -12,7 +15,7 @@ const Footer = () => {
                         <Image className='w-[300px]' src={logo} alt='logo.png' />
                         <p>Empowering your financial future with trusted investments.</p>
                     </div>
-                    <div className='mt-5 xl:mt-0'>
+                    {/* <div className='mt-5 xl:mt-0'>
                         <ul className='space-y-3 xl:space-y-5'>
                             <li>Wishlist</li>
                             <li>Special Offers</li>
@@ -29,11 +32,11 @@ const Footer = () => {
                             <li>Best Sellers</li>
                             <li>Mega</li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div className='flex gap-5 mt-5 xl:mt-0'>
-                        <Image src={facebook} className='w-[50px] h-[50px]' alt='facebook.png' />
-                        <Image src={facebook} className='w-[50px] h-[50px]' alt='facebook.png' />
-                        <Image src={facebook} className='w-[50px] h-[50px]' alt='facebook.png' />
+                        <Image src={fb} className='w-[80px] h-[80px]' alt='facebook.png' />
+                        <Image src={link} className='w-[80px] h-[80px]' alt='facebook.png' />
+                        <Image src={insta} className='w-[80px] h-[80px]' alt='facebook.png' />
                     </div>
                 </div>
 

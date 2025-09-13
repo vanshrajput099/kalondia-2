@@ -8,6 +8,7 @@ const page = async ({ params }) => {
 
     const paramsNames = await params;
     const title = paramsNames.service.split("%20").join(" ");
+    console.log(title)
 
     return (
         <div>
