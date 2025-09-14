@@ -9,7 +9,7 @@ const MainPersonAbout = () => {
         <Link className='bg-white hover:cursor-pointer' href={`/who-we-are/${MainMember.name}`}>
             <div>
                 <div className='p-5 xl:p-10'>
-                    <h1 className='text-[#6224A9] text-xl xl:text-3xl'>{MainMember.desc}</h1>
+                    <h1 className='text-[#6224A9] text-xl xl:text-3xl'>{MainMember.name}</h1>
                     <div className='text-xs xl:text-base mt-3'>
                         <p>{MainMember.desc}</p>
                     </div>
